@@ -22,14 +22,14 @@
 
     function EncodeString($string)
     {
-        return htmlspecialchars($string, ENT_QUOTES, "UTF-8");
+        return htmlspecialchars($string, ENT_QUOTES, "UTF-8"); // UTF-8
     }
  
     $pass = array("ChangeMe!"); // API passwd
  
     if (!isset($_GET["pass"]))
     {
-        die("Please submit a password!");
+        die("Please submit a password!"); // empty passwd print
     }
  
     $ssh = "service nginx stop && sleep 5 && service nginx start && sleep 5 && service nginx reload";  // Shell command for example "reboot"
