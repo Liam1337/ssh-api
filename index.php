@@ -18,14 +18,14 @@
     $ip = "1.1.1.1";        // Your server IP | "ip a"
     $port = "22";           // (22 defeault SSH port), Change it if you have changed your ssh port to something else
     $ssh_username = "root"; // server username
-    $ssh_pass = "toor";     // server passw
+    $ssh_pass = "toor";     // server passwd
 
     function EncodeString($string)
     {
         return htmlspecialchars($string, ENT_QUOTES, "UTF-8");
     }
  
-    $pass = array("ChangeMe!"); // API passowrd
+    $pass = array("ChangeMe!"); // API passwd
  
     if (!isset($_GET["pass"]))
     {
