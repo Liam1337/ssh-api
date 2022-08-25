@@ -46,7 +46,7 @@
  
     fwrite($socket, " \r\n");
    
-    sleep(3); // if your server is slow increase the time
+    sleep(3); // if your server is slow increase the time (its pretty simple if you have problems with it do it with wait operations)
    
     fwrite($socket, $ssh_username . "\r\n"); // server username
    
